@@ -1,0 +1,262 @@
+Command: C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe C:\esp\v6.0\esp-idf\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\San\Documents\capstone\build\capstone.elf C:\Users\San\Documents\capstone\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe' 'C:\esp\v6.0\esp-idf\tools\idf.py' '-p' 'COM10'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037b1fa
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f58
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr  6 2026 23:53:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1ae0ch (110092) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0002ae34 vaddr=3fc97700 size=05040h ( 20544) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0002fe7c vaddr=40374000 size=0019ch (   412) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=87b4ch (555852) map[0m
+[0;32mI (217) esp_image: segment 4: paddr=000b7b74 vaddr=4037419c size=1354ch ( 79180) load[0m
+[0;32mI (235) esp_image: segment 5: paddr=000cb0c8 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (243) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (244) boot: Disabling RNG early entropy source...[0m
+[0;32mI (254) cpu_start: Multicore app[0m
+[0;32mI (262) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (263) cpu_start: Pro cpu start user code[0m
+[0;32mI (263) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) app_init: Application information:[0m
+[0;32mI (268) app_init: Project name:     capstone[0m
+[0;32mI (272) app_init: App version:      1[0m
+[0;32mI (276) app_init: Compile time:     Apr  6 2026 23:56:20[0m
+[0;32mI (281) app_init: ELF file SHA256:  14f7a7a8d...[0m
+[0;32mI (285) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (289) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (292) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (296) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (300) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (307) heap_init: At 3FCA0580 len 00049190 (292 KiB): RAM[0m
+[0;32mI (312) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (317) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (322) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (328) spi_flash: detected chip: generic[0m
+[0;32mI (331) spi_flash: flash io: dio[0m
+[0;33mW (334) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (347) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (353) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (360) main_task: Started on CPU0[0m
+[0;32mI (370) main_task: Calling app_main()[0m
+[0;32mI (400) pp: pp rom version: e7ae62f[0m
+[0;32mI (400) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (410) wifi:wifi driver task: 3fceec68, prio:23, stack:6656, core=0[0m
+[0;32mI (420) wifi:wifi firmware version: 44738b4[0m
+[0;32mI (420) wifi:wifi certification version: v7.0[0m
+[0;32mI (420) wifi:config NVS flash: enabled[0m
+[0;32mI (420) wifi:config nano formatting: disabled[0m
+[0;32mI (420) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (430) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (430) wifi:Init management short buffer num: 32[0m
+[0;32mI (440) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (440) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (450) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (450) wifi:Init static rx buffer num: 10[0m
+[0;32mI (450) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi_init: rx ba win: 6[0m
+[0;32mI (460) wifi_init: accept mbox: 6[0m
+[0;32mI (460) wifi_init: tcpip mbox: 32[0m
+[0;32mI (470) wifi_init: udp mbox: 6[0m
+[0;32mI (470) wifi_init: tcp mbox: 6[0m
+[0;32mI (470) wifi_init: tcp tx win: 5760[0m
+[0;32mI (480) wifi_init: tcp rx win: 5760[0m
+[0;32mI (480) wifi_init: tcp mss: 1440[0m
+[0;32mI (480) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (490) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (490) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (500) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (540) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (580) wifi:mode : sta (9c:13:9e:f4:00:a8)[0m
+[0;32mI (580) wifi:enable tsf[0m
+[0;32mI (580) TOF_ANCHOR: Wi-Fi connecting...[0m
+[0;32mI (590) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (590) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (600) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (600) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (640) wifi:connected with ESP_RECEIVER, aid = 4, channel 11, BW20, bssid = 88:dc:96:6a:46:1e[0m
+[0;32mI (640) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (650) wifi:pm start, type: 1[0m
+
+[0;32mI (650) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (660) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (670) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (670) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (10580) TOF_ANCHOR: Starting TOF Task...[0m
+[0;32mI (10580) TOF_ANCHOR: TOF Task Started. Scanning for TOF_TAG-1...[0m
+[0;32mI (10580) main_task: Returned from app_main()[0m
+[0;33mW (13480) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 97 mSec[0m
+[0;33mW (13480) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (13800) wifi:FTM session ends with 13 valid readings out of 13 readings received, Avg raw RTT: 6.730 nSec, Avg RSSI: -51[0m
+[0;32mI (13800) TOF_ANCHOR: Session #1 SUCCESS: 0.00m[0m
+[0;33mW (18200) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 82 mSec[0m
+[0;33mW (18200) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (18510) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 6.138 nSec, Avg RSSI: -51[0m
+[0;32mI (18510) TOF_ANCHOR: Session #2 SUCCESS: 0.00m[0m
+[0;33mW (22910) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 83 mSec[0m
+[0;33mW (22910) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (23220) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 7.142 nSec, Avg RSSI: -51[0m
+[0;32mI (23220) TOF_ANCHOR: Session #3 SUCCESS: 0.00m[0m
+[0;33mW (27620) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 82 mSec[0m
+[0;33mW (27620) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (27930) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 4.799 nSec, Avg RSSI: -54[0m
+[0;32mI (27930) TOF_ANCHOR: Session #4 SUCCESS: 0.00m[0m
+[0;33mW (32330) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 83 mSec[0m
+[0;33mW (32330) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (32640) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 8.482 nSec, Avg RSSI: -53[0m
+[0;32mI (32640) TOF_ANCHOR: Session #5 SUCCESS: 0.00m[0m
+[0;33mW (37040) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 83 mSec[0m
+[0;33mW (37040) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (37350) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 32.31 nSec, Avg RSSI: -54[0m
+[0;32mI (37350) TOF_ANCHOR: Session #6 SUCCESS: 0.00m[0m
+[0;33mW (41750) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 84 mSec[0m
+[0;33mW (41750) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (42060) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 22.879 nSec, Avg RSSI: -56[0m
+[0;32mI (42060) TOF_ANCHOR: Session #7 SUCCESS: 0.00m[0m
+[0;33mW (46460) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 86 mSec[0m
+[0;33mW (46460) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (46770) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 19.754 nSec, Avg RSSI: -55[0m
+[0;32mI (46770) TOF_ANCHOR: Session #8 SUCCESS: 0.00m[0m
+[0;33mW (51170) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 84 mSec[0m
+[0;33mW (51170) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (51480) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 23.995 nSec, Avg RSSI: -53[0m
+[0;32mI (51480) TOF_ANCHOR: Session #9 SUCCESS: 0.00m[0m
+[0;33mW (55880) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 84 mSec[0m
+[0;33mW (55880) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (56190) wifi:FTM session ends with 13 valid readings out of 13 readings received, Avg raw RTT: 14.182 nSec, Avg RSSI: -53[0m
+[0;32mI (56190) TOF_ANCHOR: Session #10 SUCCESS: 0.00m[0m
+[0;33mW (60590) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 86 mSec[0m
+[0;33mW (60590) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (60900) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 14.397 nSec, Avg RSSI: -51[0m
+[0;32mI (60900) TOF_ANCHOR: Session #11 SUCCESS: 0.00m[0m
+[1;31mE (66800) TOF_ANCHOR: Session #12 FAILED[0m
+[0;33mW (71200) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 90 mSec[0m
+[0;33mW (71200) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (71510) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 26.785 nSec, Avg RSSI: -56[0m
+[0;32mI (71510) TOF_ANCHOR: Session #13 SUCCESS: 0.00m[0m
+[0;33mW (75920) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 80 mSec[0m
+[0;33mW (75920) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (76220) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 119.196 nSec, Avg RSSI: -72[0m
+[0;32mI (76220) TOF_ANCHOR: Session #14 SUCCESS: 0.02m[0m
+[0;33mW (80630) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 80 mSec[0m
+[0;33mW (80630) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (80930) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 113.504 nSec, Avg RSSI: -72[0m
+[0;32mI (80940) TOF_ANCHOR: Session #15 SUCCESS: 0.02m[0m
+[0;33mW (85340) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 80 mSec[0m
+[0;33mW (85340) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (85640) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 97.767 nSec, Avg RSSI: -70[0m
+[0;32mI (85640) TOF_ANCHOR: Session #16 SUCCESS: 0.01m[0m
+[0;33mW (90050) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 81 mSec[0m
+[0;33mW (90050) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (90350) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 71.875 nSec, Avg RSSI: -70[0m
+[0;32mI (90360) TOF_ANCHOR: Session #17 SUCCESS: 0.01m[0m
+[0;33mW (94760) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 81 mSec[0m
+[0;33mW (94760) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (95060) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 120.647 nSec, Avg RSSI: -69[0m
+[0;32mI (95070) TOF_ANCHOR: Session #18 SUCCESS: 0.02m[0m
+[0;33mW (99470) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 81 mSec[0m
+[0;33mW (99470) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (99780) wifi:FTM session ends with 13 valid readings out of 13 readings received, Avg raw RTT: 103.726 nSec, Avg RSSI: -68[0m
+[0;32mI (99780) TOF_ANCHOR: Session #19 SUCCESS: 0.02m[0m
+[0;33mW (104180) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 82 mSec[0m
+[0;33mW (104180) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (104490) wifi:FTM session ends with 13 valid readings out of 13 readings received, Avg raw RTT: 121.875 nSec, Avg RSSI: -67[0m
+[0;32mI (104490) TOF_ANCHOR: Session #20 SUCCESS: 0.02m[0m
+[0;33mW (108890) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 82 mSec[0m
+[0;33mW (108890) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (109200) wifi:FTM session ends with 13 valid readings out of 13 readings received, Avg raw RTT: 122.115 nSec, Avg RSSI: -72[0m
+[0;32mI (109200) TOF_ANCHOR: Session #21 SUCCESS: 0.02m[0m
+[0;33mW (113600) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 83 mSec[0m
+[0;33mW (113600) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (113910) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 119.84 nSec, Avg RSSI: -68[0m
+[0;32mI (113910) TOF_ANCHOR: Session #22 SUCCESS: 0.02m[0m
+[0;33mW (118310) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 83 mSec[0m
+[0;33mW (118310) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (118620) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 94.419 nSec, Avg RSSI: -74[0m
+[0;32mI (118620) TOF_ANCHOR: Session #23 SUCCESS: 0.01m[0m
+[0;33mW (123020) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 83 mSec[0m
+[0;33mW (123020) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (123330) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 100.334 nSec, Avg RSSI: -71[0m
+[0;32mI (123330) TOF_ANCHOR: Session #24 SUCCESS: 0.01m[0m
+[0;33mW (127730) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 84 mSec[0m
+[0;33mW (127730) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (128040) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 86.830 nSec, Avg RSSI: -71[0m
+[0;32mI (128040) TOF_ANCHOR: Session #25 SUCCESS: 0.01m[0m
+[0;33mW (132440) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 84 mSec[0m
+[0;33mW (132440) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (132750) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 73.102 nSec, Avg RSSI: -66[0m
+[0;32mI (132750) TOF_ANCHOR: Session #26 SUCCESS: 0.01m[0m
+[0;33mW (137150) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 86 mSec[0m
+[0;33mW (137150) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (137460) wifi:FTM session ends with 13 valid readings out of 13 readings received, Avg raw RTT: 90.625 nSec, Avg RSSI: -75[0m
+[0;32mI (137460) TOF_ANCHOR: Session #27 SUCCESS: 0.01m[0m
+[0;33mW (141860) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 86 mSec[0m
+[0;33mW (141860) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (142170) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 81.26 nSec, Avg RSSI: -69[0m
+[0;32mI (142170) TOF_ANCHOR: Session #28 SUCCESS: 0.01m[0m
+[0;33mW (146570) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 86 mSec[0m
+[0;33mW (146570) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (146880) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 81.696 nSec, Avg RSSI: -71[0m
+[0;32mI (146880) TOF_ANCHOR: Session #29 SUCCESS: 0.01m[0m
+[0;33mW (151280) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 87 mSec[0m
+[0;33mW (151280) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (151590) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 79.575 nSec, Avg RSSI: -71[0m
+[0;32mI (151590) TOF_ANCHOR: Session #30 SUCCESS: 0.01m[0m
+[0;33mW (155990) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 87 mSec[0m
+[0;33mW (155990) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (156300) wifi:FTM session ends with 12 valid readings out of 12 readings received, Avg raw RTT: 67.578 nSec, Avg RSSI: -70[0m
+[0;32mI (156300) TOF_ANCHOR: Session #31 SUCCESS: 0.01m[0m
+[0;33mW (160700) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 88 mSec[0m
+[0;33mW (160700) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (161010) wifi:FTM session ends with 13 valid readings out of 13 readings received, Avg raw RTT: 69.951 nSec, Avg RSSI: -70[0m
+[0;32mI (161010) TOF_ANCHOR: Session #32 SUCCESS: 0.01m[0m
+[0;33mW (165420) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 77 mSec[0m
+[0;33mW (165420) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (165720) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 68.638 nSec, Avg RSSI: -70[0m
+[0;32mI (165720) TOF_ANCHOR: Session #33 SUCCESS: 0.01m[0m
+[0;33mW (170130) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 78 mSec[0m
+[0;33mW (170130) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (170430) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 78.125 nSec, Avg RSSI: -69[0m
+[0;32mI (170430) TOF_ANCHOR: Session #34 SUCCESS: 0.01m[0m
+[0;33mW (174840) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 78 mSec[0m
+[0;33mW (174840) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (175160) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 111.384 nSec, Avg RSSI: -70[0m
+[0;32mI (175160) TOF_ANCHOR: Session #35 SUCCESS: 0.02m[0m
+[0;33mW (179560) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 69 mSec[0m
+[0;33mW (179560) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (179850) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 98.102 nSec, Avg RSSI: -74[0m
+[0;32mI (179850) TOF_ANCHOR: Session #36 SUCCESS: 0.01m[0m
+[0;33mW (184260) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 79 mSec[0m
+[0;33mW (184260) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (184560) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 94.419 nSec, Avg RSSI: -74[0m
+[0;32mI (184560) TOF_ANCHOR: Session #37 SUCCESS: 0.01m[0m
+[0;33mW (188970) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 78 mSec[0m
+[0;33mW (188970) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (189270) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 121.986 nSec, Avg RSSI: -79[0m
+[0;32mI (189270) TOF_ANCHOR: Session #38 SUCCESS: 0.02m[0m
+[0;33mW (193680) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 79 mSec[0m
+[0;33mW (193680) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (193980) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 94.196 nSec, Avg RSSI: -75[0m
+[0;32mI (193980) TOF_ANCHOR: Session #39 SUCCESS: 0.01m[0m
+[0;33mW (198390) wifi:Starting FTM session with 9c:13:9e:f4:00:e1 in 80 mSec[0m
+[0;33mW (198390) wifi:Mode: non-ASAP, Bursts: 2, FTM's per burst: 8, Burst Period: 200mSec, Burst Duration: 32000uSec[0m
+[0;33mW (198690) wifi:FTM session ends with 14 valid readings out of 14 readings received, Avg raw RTT: 96.428 nSec, Avg RSSI: -74[0m
+[0;32mI (198690) TOF_ANCHOR: Session #40 SUCCESS: 0.01m[0m

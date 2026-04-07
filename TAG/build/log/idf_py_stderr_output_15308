@@ -1,0 +1,20 @@
+Command: cmake -G Ninja -B C:\Users\San\Documents\capstone\TAG\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32s3 -DCCACHE_ENABLE=False C:\Users\San\Documents\capstone\TAG
+Configuration Report                                                           
++-----------------------------------------------------------------------------+
+|  Parser Version: 1                                                          |
+|  Verbosity: default                                                         |
+|  Defaults policy: sdkconfig                                                 |
+|  Status: Finished with notifications                                        |
+|                                                                             |
+| Disabled Symbols/Choices With User-Set Value                                |
+| +-------------------------------------------------------------------------+ |
+| | * IDF_TARGET (defined at C:/esp/v6.0/esp-idf/Kconfig:68) with user-set  | |
+| | value esp32s3 from C:\Users\San\AppData\Local\Temp\kconfgen_tmp9unqtfwb | |
+| | * ESP_WIFI_FTM_INITIATOR_SUPPORT (defined at                            | |
+| | C:/esp/v6.0/esp-idf/components/esp_wifi/Kconfig:410) with user-set      | |
+| | value n from C:\Users\San\AppData\Local\Temp\kconfgen_tmp9unqtfwb       | |
+| | * ESP_WIFI_FTM_RESPONDER_SUPPORT (defined at                            | |
+| | C:/esp/v6.0/esp-idf/components/esp_wifi/Kconfig:415) with user-set      | |
+| | value y from C:\Users\San\AppData\Local\Temp\kconfgen_tmp9unqtfwb       | |
+| +-------------------------------------------------------------------------+ |
++-----------------------------------------------------------------------------+
